@@ -3,7 +3,7 @@ const getLogin = async (user: { email: string; password: string }): Promise<bool
     try {
             // cambiar ruta antes de hacer push para la construcción de vercel:
 		                                            //http://localhost:3000/api/login
-        const response = await fetch('https://ecommerce-amiibo.vercel.app/api/login', {
+        const response = await fetch('https://espec-fe-3-ecommerce-amiibo.vercel.app/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
